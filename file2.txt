@@ -1,2 +1,43 @@
 https://www.academia.edu/37738151/_123doc_ly_thuyet_va_huong_dan_giai_bai_tap_ma_tran_va_dinh_thuc
 http://hoctaplaptrinh.blogspot.com/2014/09/tinh-inh-thuc-ma-tran-cap-n-trong-lap.html
+-- 7.	Tìm các số hóa đơn mua cùng lúc 2 sản phẩm có mã số “BB01” và “BB02”, mỗi sản phẩm mua với số lượng từ 10 đến 20.
+SELECT A.SOHD, COUNT(A.SOHD) AS so_san_pham
+FROM CTHD A
+WHERE (A.MASP = 'BB01' OR A.MASP = 'BB02') AND (A.SL > 10 )
+GROUP BY A.SOHD
+HAVING so_san_pham = 2;
+
+
+-- 8.	In ra danh sách các sản phẩm (MASP,TENSP) do “Trung Quốc” sản xuất hoặc các sản phẩm được bán ra trong ngày 1/1/2007.
+SELECT * FROM SANPHAM AS C
+WHERE C.MASP IN (
+	SELECT A.MASP FROM CTHD AS A
+	WHERE A.SOHD IN (
+	SELECT B.SOHD FROM HOADON B
+	where STR_TO_DATE(B.NGHD, "%d/%m/%Y") = "2007-01-01")
+) OR C.NUOCSX = "Trung Quoc";
+
+
+-- 9.	In ra danh sách các sản phẩm (MASP,TENSP) không bán được.
+SELECT * FROM SANPHAM AS C
+WHERE C.MASP Not IN (
+	SELECT A.MASP FROM CTHD AS A
+	WHERE A.SOHD IN (
+	SELECT B.SOHD FROM HOADON B)
+);
+
+-- 10. In ra danh sách các sản phẩm (MASP,TENSP) không bán được trong năm 2006.
+SELECT * FROM SANPHAM AS C
+WHERE C.MASP NOT IN (
+	SELECT A.MASP FROM CTHD AS A
+	WHERE A.SOHD IN (
+	SELECT B.SOHD FROM HOADON B
+	where STR_TO_DATE(B.NGHD, "%d/%m/%Y") >= "2006-01-01" AND STR_TO_DATE(B.NGHD, "%d/%m/%Y") < "2006-12-31")
+);
+
+-- 17.	Tìm họ tên khách hàng đã mua hóa đơn có trị giá cao nhất trong năm 2006
+SELECT *
+FROM HOADON B
+where STR_TO_DATE(B.NGHD, "%d/%m/%Y") >= "2006-01-01" AND STR_TO_DATE(B.NGHD, "%d/%m/%Y") < "2006-12-31"
+ORDER BY B.TRIGIA DESC
+LIMIT 1;
