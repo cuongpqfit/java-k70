@@ -8,3 +8,21 @@ Ngày đặt hàng
 Sản phẩm đặt hàng
 Số lượng sản phẩm
 Giá sản phẩm
+
+Giả sử chúng ta có một hệ thống quản lý thư viện, trong đó có các bảng sau:
+
+Bảng "Sách":
+
+Mã sách (PK)
+Tên sách
+Tác giả
+Năm xuất bản
+Nhà xuất bản
+Bảng "Mượn sách":
+
+Mã mượn sách (PK)
+Mã đọc giả (FK)
+Mã sách (FK)
+Ngày mượn
+Ngày trả
+Số lượng mượn
