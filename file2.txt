@@ -26,3 +26,32 @@ Mã sách (FK)
 Ngày mượn
 Ngày trả
 Số lượng mượn
+
+
+Để chuyển các bảng sang chuẩn 2NF, ta cần đảm bảo rằng các bảng đã phân rã đầy đủ thành các bảng có tính chất phụ thuộc hàm.
+
+Các bảng ban đầu đã được phân chia một cách hợp lý, vì vậy ta chỉ cần kiểm tra xem các bảng đã đáp ứng được các yêu cầu của chuẩn 2NF chưa.
+
+Bảng "Sách":
+Mã sách (PK)
+Tên sách
+Tác giả
+Năm xuất bản
+Nhà xuất bản
+Bảng "Sách" đã ở trong chuẩn 2NF, vì tất cả các trường đều phụ thuộc vào khóa chính "Mã sách".
+
+Bảng "Mượn sách":
+Mã mượn sách (PK)
+Mã đọc giả (FK)
+Mã sách (FK)
+Ngày mượn
+Ngày trả
+Số lượng mượn
+Bảng "Mượn sách" chưa đáp ứng được yêu cầu của chuẩn 2NF vì có sự phụ thuộc giữa các trường "Mã sách" và "Số lượng mượn". Để phân rã bảng này, ta có thể tạo ra một bảng mới để lưu thông tin về số lượng sách mượn tương ứng với mỗi lần mượn:
+
+Bảng "Chi tiết mượn sách":
+Mã chi tiết mượn sách (PK)
+Mã mượn sách (FK)
+Mã sách (FK)
+Số lượng mượn
+Sau khi phân rã bảng "Mượn sách" thành hai bảng "Mượn sách" và "Chi tiết mượn sách", các bảng đã đáp ứng được yêu cầu của chuẩn 2NF.
