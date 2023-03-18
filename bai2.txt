@@ -1,0 +1,92 @@
+Bài 2: Công ty du lịch TTT chuyên tổ chức các chuyến du lịch trong nước cần thiết kế một hệ thống thông tin quản lý việc vận chuyển, đội ngũ tài xế, lượng khách vận chuyển, cũng như lập kế hoạch điều động xe . Công ty có một đội xe riêng, với nhiều loại xe khác nhau và đội ngũ tài xế riêng. Mỗi xe có mã phân biệt, hiệu xe, sốcây số đã đi được, số chỗ ngồi, tình trạng hoạt động hiện tại. Các tài xế có mã phân biệt , họ tên, phái, số điện thoại di động. Các tài xế sẽ nhận xe theo sắp xếp của bộ phận điều xe, và ghi nhận số cây số đi được của xe cho tài xế trong mỗi lần đi. Các tour du lịch có mã phân biệt và các thông tin khác như thành phố đến, ngày đi, ngày về, chiều dài quảng đường (km). Một chuyến đi cụ thể theo tour còn phải xác nhận thêm thông tin về tài xế và xe chỉ định trong chuyến đi, và cho biết số khách thực tế. Thể kế cơ sở dữ liệu ER theo chuẩn 2NF
+
+Để thiết kế cơ sở dữ liệu ER cho hệ thống thông tin quản lý vận chuyển của công ty du lịch TTT theo chuẩn 1NF, ta cần xác định các thực thể và mối quan hệ giữa chúng như sau:
+
+Thực thể Xe:
+Mã số xe (PK)
+Hiệu xe
+Số cây số đã đi được
+Số chỗ ngồi
+Tình trạng hoạt động hiện tại
+
+Thực thể Tài xế:
+Mã số tài xế (PK)
+Họ tên
+Phái
+Số điện thoại di động
+
+Thực thể Tour du lịch:
+Mã số tour (PK)
+Thành phố đến
+Ngày đi
+Ngày về
+Chiều dài quãng đường
+
+Thực thể Chuyến đi:
+Mã số chuyến (PK)
+Mã số tour (FK)
+Mã số xe (FK)
+Mã số tài xế (FK)
+Số khách thực tế
+Ngày thực hiện chuyến đi
+
+Mối quan hệ giữa các thực thể như sau:
+Mỗi xe chỉ thuộc về một tài xế duy nhất (mối quan hệ 1-nhiều giữa thực thể Tài xế và Xe)
+Mỗi tour du lịch có thể có nhiều chuyến đi (mối quan hệ 1-nhiều giữa thực thể Tour du lịch và Chuyến đi)
+Mỗi chuyến đi chỉ được chỉ định một xe và một tài xế (mối quan hệ 1-nhiều giữa thực thể Xe và Chuyến đi, thực thể Tài xế và Chuyến đi)
+Với thiết kế cơ sở dữ liệu ER này, ta đã đảm bảo chuẩn 1NF bằng cách loại bỏ các giá trị lặp lại và phân tách các thuộc tính thành các bảng độc lập.
+
+Để chuẩn hóa cơ sở dữ liệu ER của công ty du lịch TTT lên chuẩn 2NF, ta cần xác định các thuộc tính không phụ thuộc vào toàn bộ khóa chính của mỗi bảng và phân tách chúng thành các bảng độc lập. Trong trường hợp này, ta sẽ phân tích các bảng Xe, Tài xế, Tour du lịch và Chuyến đi để tìm ra các thuộc tính không phụ thuộc vào khóa chính của từng bảng.
+
+Bảng Xe:
+Mã số xe (PK)
+Hiệu xe
+Số cây số đã đi được
+Số chỗ ngồi
+Tình trạng hoạt động hiện tại
+
+Các thuộc tính của bảng Xe đều phụ thuộc vào khóa chính Mã số xe, không có thuộc tính nào phụ thuộc vào một tập hợp thuộc tính con của Mã số xe. Do đó, bảng Xe đã đạt chuẩn 2NF.
+
+Bảng Tài xế:
+Mã số tài xế (PK)
+Họ tên
+Phái
+Số điện thoại di động
+
+Tương tự, các thuộc tính của bảng Tài xế đều phụ thuộc vào khóa chính Mã số tài xế. Do đó, bảng Tài xế đã đạt chuẩn 2NF.
+
+Bảng Tour du lịch:
+Mã số tour (PK)
+Thành phố đến
+Ngày đi
+Ngày về
+Chiều dài quãng đường
+
+Các thuộc tính của bảng Tour du lịch đều phụ thuộc vào khóa chính Mã số tour. Tuy nhiên, một chuyến đi có thể có nhiều khách hàng tham gia, do đó ta cần tách bảng Chuyến đi thành bảng riêng để đạt chuẩn 2NF.
+
+Bảng Chuyến đi:
+Mã số chuyến (PK)
+Mã số tour (FK)
+Mã số xe (FK)
+Mã số tài xế (FK)
+Số khách thực tế
+Ngày thực hiện chuyến đi
+
+Trong bảng Chuyến đi, thuộc tính Số khách thực tế không phụ thuộc vào khóa chính Mã số xe hoặc Mã số tài xế, mà phụ thuộc vào khóa chính của bảng Chuyến đi là Mã số chuyến. Do đó, ta cần tách thuộc tính này thành bảng riêng để đạt chuẩn 2NF.
+
+Bảng Số khách thực tế:
+Mã số chuyến (PK, FK)
+Mã tài xế (PK)
+Mã xe (PK)
+Số khách hàng thực tế
+
+Các khóa chính của bảng Số khách hàng thực tế sẽ là sự kết hợp của ba khóa chính từ bảng Chuyến đi, bao gồm Mã chuyến đi, Mã tài xế và Mã xe. Thuộc tính Số khách hàng thực tế sẽ lưu trữ số lượng khách hàng thực tế tham gia trong mỗi chuyến đi.
+
+Ví dụ, bảng Số khách hàng thực tế có thể có dạng như sau:
+
+Mã chuyến đi	    Mã tài xế	      Mã xe	      Số khách hàng thực tế
+CD001	            TX001	          X001	      20
+CD002	            TX002	          X002	      15
+CD002	            TX003	          X003	      10
+
+Trong đó, chuyến đi CD001 được lái bởi tài xế TX001 và sử dụng xe X001, có tổng số khách hàng thực tế tham gia là 20. Chuyến đi CD002 được phân công cho hai tài xế TX002 và TX003, sử dụng xe X002 và X003 tương ứng, với số khách hàng thực tế là 15 và 10.
