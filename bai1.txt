@@ -1,0 +1,118 @@
+Bài 1: Một trung tâm đào tạo tin học ngoài giờ cứ hai tháng mở một khóa học mới. Mỗi khóa có các thông tin Mã khóa học, ngày khai giảng, Mỗi khóa học có nhiều lớp học theo các môn tin học ứng dụng khác nhau. Lớp học có các thông tin Mã lớp,tên lớp, số học viên dự kiến. Mỗi lớp chỉ dạy một môn. Môn học có các thông tin Mã môn học, tên môn học, cấp độ, số tiết. Học viên trong một khóa học có thể đăng ký học nhiều lớp theo các môn học khác nhau. Học viên có các thông tin Mã học viên, họ tên, ngày sinh, quê quán, địa chỉ, trình độ, điện thoại. Khi đăng ký một lớp học trong một khóa học, học viên sẽ được cấp một biên lai xác nhận việc đóng học phí lớp học. Mỗi môn học khi học xong học viên sẽ có hai cột điểm Lý thuyết và Thực hành. Học viên sẽ được cấp chứng chỉ môn học khi đạt điểm 5 trở lên cho cả hai cột diểm. Giáo viên được mời giảng trong một khóa học có thể dạy nhiều lớp với những môn học có thể khác nhau. Giáo viên có các thông tin Mã giáo viên, Họ tên, địa chỉ, nơi công tác, điện thoại. Thiết kế ER theo chuẩn 1NF
+
+
+Để thiết kế ER theo chuẩn 1NF cho hệ thống trung tâm đào tạo tin học trên, ta có thể tạo các bảng sau:
+
+Bảng Khóa học
+Mã khóa học (PK)
+Ngày khai giảng
+Bảng Môn học
+Mã môn học (PK)
+Tên môn học
+Cấp độ
+Số tiết
+
+Bảng Lớp học
+Mã lớp (PK)
+Tên lớp
+Số học viên dự kiến
+Mã khóa học (FK)
+Mã môn học (FK)
+
+Bảng Học viên
+Mã học viên (PK)
+Họ tên
+Ngày sinh
+Quê quán
+Địa chỉ
+Trình độ
+Điện thoại
+
+Bảng Đăng ký
+Mã đăng ký (PK)
+Mã học viên (FK)
+Mã lớp (FK)
+Ngày đăng ký
+Học phí
+
+Bảng Điểm
+Mã điểm (PK)
+Mã học viên (FK)
+Mã lớp (FK)
+Điểm lý thuyết
+Điểm thực hành
+
+Bảng Giáo viên
+Mã giáo viên (PK)
+Họ tên
+Địa chỉ
+Nơi công tác
+Điện thoại
+
+Bảng Giảng dạy
+Mã giảng dạy (PK)
+Mã giáo viên (FK)
+Mã lớp (FK)
+Mã môn học (FK)
+
+Chú ý: PK là khóa chính, FK là khóa ngoại. Mỗi bảng chỉ chứa các thông tin liên quan đến thực thể tương ứng. Ví dụ, bảng Lớp học chỉ chứa thông tin về các lớp học và môn học mà chúng có liên quan đến, không chứa thông tin về học viên hoặc giáo viên.
+
+
+Sau khi thiết kế ER theo chuẩn 1NF, ta cần kiểm tra và chuẩn hóa để đảm bảo dữ liệu được lưu trữ và xử lý một cách hiệu quả. Để chuẩn hóa theo chuẩn 2NF, ta cần phân bổ dữ liệu vào các bảng sao cho mỗi bảng chỉ chứa thông tin liên quan đến một khóa chính. Với hệ thống trung tâm đào tạo tin học trên, ta có thể tách bảng Lớp học thành hai bảng để đạt chuẩn 2NF:
+
+Bảng Khóa học
+Mã khóa học (PK)
+Ngày khai giảng
+
+Bảng Môn học
+Mã môn học (PK)
+Tên môn học
+Cấp độ
+Số tiết
+
+Bảng Lớp học
+Mã lớp (PK)
+Tên lớp
+Số học viên dự kiến
+Mã môn học (FK)
+
+Bảng Khóa học - Lớp học
+Mã khóa học (PK, FK)
+Mã lớp (PK, FK)
+
+Bảng Học viên
+Mã học viên (PK)
+Họ tên
+Ngày sinh
+Quê quán
+Địa chỉ
+Trình độ
+Điện thoại
+
+Bảng Đăng ký
+Mã đăng ký (PK)
+Mã học viên (FK)
+Mã lớp (FK)
+Ngày đăng ký
+Học phí
+
+Bảng Điểm
+Mã điểm (PK)
+Mã học viên (FK)
+Mã lớp (FK)
+Điểm lý thuyết
+Điểm thực hành
+
+Bảng Giáo viên
+Mã giáo viên (PK)
+Họ tên
+Địa chỉ
+Nơi công tác
+Điện thoại
+
+Bảng Giảng dạy
+Mã giảng dạy (PK)
+Mã giáo viên (FK)
+Mã lớp (FK)
+Mã môn học (FK)
+Chú ý: Trong bảng Lớp học, ta đã loại bỏ trường Mã khóa học vì thông tin này đã được lưu trữ trong bảng Khóa học - Lớp học. Bảng Khóa học - Lớp học là bảng liên kết giữa Khóa học và Lớp học để xác định quan hệ giữa các bảng. Bảng này chứa hai trường Mã khóa học và Mã lớp học, tạo thành khóa chính. Khi phân bổ dữ liệu vào các bảng này
