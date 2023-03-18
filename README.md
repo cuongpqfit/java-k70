@@ -18,3 +18,8 @@ PROMPT+=' %F{171}%3~%F{76}${vcs_info_msg_0_}%{$reset_color%} # '
 #zstyle ':vcs_info:git:*' formats '%b'
 zstyle ':vcs_info:git*' formats "(%b)%a%m%u%c"
 #zstyle ':vcs_info:git*' actionformats "%s  %r/%S %b %m%u%c "
+
+
+
+javac -encoding utf-8 -cp ..\lib\*; JavaDatabaseSimple.java
+java -cp ..\lib\*; JavaDatabaseSimple
