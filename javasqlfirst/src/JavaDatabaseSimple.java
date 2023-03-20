@@ -95,13 +95,48 @@ public class JavaDatabaseSimple {
         }
     }
 
+    public void sqlCallable(String url, String user, String password) {
+        try (Connection conn = DriverManager.getConnection(url, user, password)) {
+            System.out.println("sqlCallable!");
+            CallableStatement cstmt = conn.prepareCall("{ call example1 (?,?,?,?)}");
+            cstmt.setInt(1, 1);
+            cstmt.setString(2, "HV01");
+            cstmt.registerOutParameter(3, Types.INTEGER);
+            cstmt.registerOutParameter(4, Types.VARCHAR);
+
+            cstmt.execute();
+
+            ResultSet resultSet = cstmt.getResultSet();
+            while (resultSet.next()) {
+                String mahv = resultSet.getString("MAHV");
+                String ho = resultSet.getString("HO");
+                String ten = resultSet.getString("TEN");
+                Date ngaysinh = resultSet.getDate("NGSINH");
+                String gioitinh = resultSet.getString("GIOITINH");
+                String noisinh = resultSet.getString("NOISINH");
+                String malop = resultSet.getString("MALOP");
+
+                // In ra thông tin của học viên
+//                System.out.println(mahv + " - " + ho + " " + ten + ", " + ngaysinh + ", " + gioitinh + ", " + noisinh + ", " + malop);
+
+                // In ra thông tin của học viên
+                System.out.println(String.format("%-5s\t%-20s\t%-20s\t%-10s\t%-5s\t%-20s\t%-5s", mahv, ho, ten, ngaysinh, gioitinh, noisinh, malop));
+            }
+
+            String sResult = cstmt.getString(4);
+            System.out.println(sResult);
+
+        } catch (Exception e) {
+        }
+    }
+
     public static void main(String[] args) {
         System.setProperty("console.encoding", "UTF-8");
         System.out.println("Xin chào"); // in ra chuỗi "Xin chào" trên console
 
         // Đọc các giá trị từ file app.config
         Properties prop = new Properties();
-        try (FileInputStream input = new FileInputStream("app.config")) {
+        try (FileInputStream input = new FileInputStream("D:\\JavaFull\\javasqlfirst\\src\\app.config")) {
             prop.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -112,8 +147,17 @@ public class JavaDatabaseSimple {
         String user = prop.getProperty("user");
         String password = prop.getProperty("password");
 
+        //STEP 2: Register JDBC driver
+        try {
+            Class.forName("org.mariadb.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
         JavaDatabaseSimple javaDatabaseSimple = new JavaDatabaseSimple();
         javaDatabaseSimple.sqlStatement(url, user, password);
         javaDatabaseSimple.sqlPreparedStatement(url, user, password);
+        javaDatabaseSimple.sqlCallable(url, user, password);
+
     }
 }
