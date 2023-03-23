@@ -24,8 +24,9 @@ public class StoreHandler implements Runnable {
 
     private void connectDatabase() {
         while (!isConnected) {
-            try (Connection conn = DriverManager.getConnection(url, user, password)) {
-                isConnected = true;
+            try {
+                conn = DriverManager.getConnection(url, user, password);
+                isConnected = true;                
                 System.out.println("Database Connected!");
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -40,13 +41,15 @@ public class StoreHandler implements Runnable {
 
             while (isConnected) {
                 try {
-                    String sql = "INSERT INTO DUAL (data) VALUES (?)";
-                    PreparedStatement statement = null;
-                    statement = conn.prepareStatement(sql);
                     String data = queue.take();
+                    System.out.println("->DB: " + data);
+                    if (data != null ) {
+                        String sql = "INSERT INTO batchfile (data) VALUES (?)";
+                        PreparedStatement statement = conn.prepareStatement(sql);                        
 
-                    statement.setString(1, data);
-                    statement.executeUpdate();
+                        statement.setString(1, data);
+                        statement.executeUpdate();
+                    }
                 } catch (SQLException | InterruptedException throwables) {
                     isConnected = false;
                     throwables.printStackTrace();
