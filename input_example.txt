@@ -1,0 +1,5 @@
+account_id,stock_id,stock_name,stock_price,purchase_date
+026C707078,VPB,Ngan Hang VPBank,21000,2020/07/16 8:00:00
+026C707078,FTP,Cong ty FPT,64000,2020/07/16 8:00:00
+026C707079,DIG,Dat Xanh,23000,2020/07/16 8:00:00
+026C707079,DIG,Dat Xanh,23000,2020/07/16 8:00:00
