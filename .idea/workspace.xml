@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc25555-fb31-41b1-8a58-5f8d5cc3240d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/java-k70.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 7_3/Lesson 7_3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_8/Lesson8_Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_8/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 7_3/Lesson 7_3/src/com/vtv/backend/BookBackend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 7_3/Lesson 7_3/src/com/vtv/backend/BookBackend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_7/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_7/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_7/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_7/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_7/lesson_7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_7/lesson_7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java_10.1.2023/lesson_29" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -115,5 +102,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
