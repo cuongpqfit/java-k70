@@ -5,7 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc25555-fb31-41b1-8a58-5f8d5cc3240d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/java-k70.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java-k70.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/backend/BookBackend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/entity/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/entity/ReferenceBooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/entity/TextBooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/frontend/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/Lesson 7_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson8_Sort$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson8_Sort$Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson8_Sort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson_8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/baitap/bai1.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/backend/BookBackend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/entity/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/entity/ReferenceBooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/entity/TextBooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/frontend/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +43,37 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1682172831" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1682172830" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -39,45 +92,60 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java_10.1.2023/lesson_29" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson_10" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.Lesson8_Sort">
-    <configuration name="Lesson8_Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson8_Sort" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\new\java-k70\lesson_10" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ReadWriteObject">
+    <configuration name="BufferInputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BufferInputStream" />
       <module name="java-k70" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson_8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson_8" />
+    <configuration name="BufferedReaderFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BufferedReaderFile" />
       <module name="java-k70" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.vtv.frontend.Main" />
-      <module name="Lesson 7_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vtv.frontend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="PrintWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrintWriteFile" />
+      <module name="java-k70" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadWriteObject" />
+      <module name="java-k70" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteAppenFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WriteAppenFile" />
+      <module name="java-k70" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lesson8_Sort" />
-        <item itemvalue="Application.Lesson_8" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ReadWriteObject" />
+        <item itemvalue="Application.WriteAppenFile" />
+        <item itemvalue="Application.PrintWriteFile" />
+        <item itemvalue="Application.BufferedReaderFile" />
+        <item itemvalue="Application.BufferInputStream" />
       </list>
     </recent_temporary>
   </component>
