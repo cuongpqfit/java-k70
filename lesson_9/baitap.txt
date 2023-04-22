@@ -1,0 +1,50 @@
+===BÀI TẬP PUSH LÊN GITHUB
+
+Java Exception
+Bài 1:
+Viết chương trình nhập vào 2 số thực. Bắt ngoại lệ để khi nhập vào không phải là số và bắt người dùng phải nhập lại cho
+đến khi là số.
+Cài đặt hàm chia, trong đó bắt ngoại lệ nếu số chia là 0 thì thông báo phép chia không hợp lệ và kết thúc chương trình.
+
+
+Bài 2:
+Khai báo 1 mảng có n phần tử các số nguyên, viết hàm nhập các phần tử cho mảng. Bắt ngoại lệ nếu nhập phần từ có giá trị
+là 100 thì in ra các phần tử đã nhập và kết thúc chương trình.
+Gợi ý: Sử dụng từ khóa throw trong java để chủ động ném ra 1 Exception(Ngoại lệ)
+    Cú pháp: throw exception;
+    Code:
+        static void validate(int n) {
+            try {
+                if (n == 100) throw new ArithmeticException("not valid");
+            } catch (ArithmeticException) {
+                //TODO: CODE HERE
+            }
+        }
+
+
+ỨNG DỤNG NGĂN XẾP - STACK
+Bài 3: Đổi số ở hệ thập phân sang số dạng cơ số B bất ký.
+Yêu cầu nhập vào 2 số N(Cơ số 10) và B(2-16). Đổi số N sang cơ số B.
+Hướng dẫn:
+    Chuyển đối hệ cơ số 10 sang hệ cơ số B
+    Cách chuyển đổi số nguyên N từ hệ cơ số 10 sang hệ cơ số 2, trong ảnh dưới đây là ví dụ chuyển số 15 và số 6 sang hệ cơ số 2:
+
+    Gán m = 15.
+    Put phần dư m chia cho 2 (m % 2) vào stack.
+    Gán m = m / 2.
+    Nếu m > 0 quay lại bước 2.
+    Đảo ngược lại stack ta được số cần tính.
+
+Bài 4: Đổi 1 số ở dạng cơ số B về dạng số ở hệ cơ số 10
+Yêu cầu nhập vào 2 số N(Cơ số B) và B(2-16). Đổi số N sang cơ số 10.
+
+Bài 5: Cho xâu S chỉ gồm ký tự ( và ). Bạn cần kiểm tra xem S có phải là dãy ngoặc đúng không.
+
+Định nghĩa:
+	Xâu rỗng là dãy ngoặc đúng
+	Nếu xâu A là dãy ngoặc đúng thì (A) cũng là dãy ngoặc đúng. Khi đó, cặp dấu ngoặc quanh xâu A này là cặp dấu ngoặc tương ứng.
+	Nếu xâu A và B đều là dãy ngoặc đúng thì xâu A+B cũng là dãy ngoặc đúng
+Ví du: S là dấu ngoặc đúng
+	S=(()())(())
+
+
