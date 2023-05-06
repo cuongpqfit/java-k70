@@ -1,0 +1,58 @@
+===BÀI TẬP PUSH LÊN GITHUB
+
+Bài 1: Người dùng nhập vào đường dẫn 2 file.
+Viết một chương trình để hiển thị sự khác nhau giữa hai tập tin. Với mỗi sự khác nhau, hiển thị vị trí tìm thấy sự khác
+nhau và các ký tự của hai tập tin tại vị trí đó. Cũng cần phải bảo đảm rằng người sử dụng đã nhập vào đường dẫn file hợp
+lệ. Cuối cùng, hiển thị tổng số sự khác nhau đã tìm thấy.
+
+Ví dụ
+INPUT
+    file1.txt               file2.txt
+    aaaa                    abac
+
+OUTPUT
+    2 a b
+    4 a c
+    2
+
+Bài 2: Viết một chương trình để sao chép nội dung của một tập tin vào một tập tin khác loại trừ các từ "a", "an", "the".
+
+Bài 3: Cho class Student có cấu trúc như sau:
+class Student implements Serializable {
+    private static final long serialVersionUID = 1L;    // ID of Serializable
+    private String name;
+    private int age;
+    //Construct
+    //Getter - Setter
+}
+Đọc từ file input.csv mỗi dòng lưu dữ liệu gồm name, age phân cách nhau bởi dấu "," chuyển các dòng đọc được thành đổi tượng
+Student và ghi object ra file output.obj
+Ví dụ
+INPUT
+    input.csv
+    Nguyen Quoc A,32
+    Nguyen Quang B,24
+    Nguyen Van C,18
+OUTPUT
+    output.obj
+    //dữ liệu object của Student(Nguyen Quoc A,32)
+    //dữ liệu object của Student(Nguyen Quang B,24)
+    //dữ liệu object của Student(Nguyen Van C,18)
+
+Bài 4: Cho xâu S chỉ gồm ký tự ( và ). Bạn cần kiểm tra xem S có phải là dãy ngoặc đúng không.
+Nếu S là dãy ngoặc đúng, với mỗi vị trí dấu ngoặc ( trong S bạn cần in ra vị trí của dấu ngoặc tương ứng.
+
+Định nghĩa:
+	Xâu rỗng là dãy ngoặc đúng
+	Nếu xâu A là dãy ngoặc đúng thì (A) cũng là dãy ngoặc đúng. Khi đó, cặp dấu ngoặc quanh xâu A này là cặp dấu ngoặc tương ứng.
+	Nếu xâu A và B đều là dãy ngoặc đúng thì xâu A+B cũng là dãy ngoặc đúng
+Ví du: S là dấu ngoặc đúng
+	S=(()())(())
+Output
+1 6
+2 3
+4 5
+7 10
+8 9
+
+
