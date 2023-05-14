@@ -5,30 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc25555-fb31-41b1-8a58-5f8d5cc3240d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson_12/lesson_12.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/java-k70.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java-k70.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/backend/BookBackend.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/entity/Books.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/entity/ReferenceBooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/entity/TextBooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 7_3/com/vtv/frontend/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson 7_3/Lesson 7_3/Lesson 7_3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson8_Sort$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson8_Sort$Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson8_Sort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/Lesson_8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/baitap/bai1.java.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/backend/BookBackend.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/entity/Books.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/entity/ReferenceBooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/entity/TextBooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-k70/com/vtv/frontend/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/BufferInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/BufferedReaderFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/FileInputStreamReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/MyClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/PrintWriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/ReadWriteObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/WriteAppenFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/example.inp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/example.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-k70/example.out" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +40,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -60,7 +59,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1682172831" />
+                    <option name="lastUsedInstant" value="1683382581" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
@@ -92,60 +91,68 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson_10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson_12" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\new\java-k70\lesson_12" />
       <recent name="D:\new\java-k70\lesson_10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReadWriteObject">
-    <configuration name="BufferInputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BufferInputStream" />
+  <component name="RunManager" selected="Application.TCPEchoServer">
+    <configuration name="Bai2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baitap.bai2.Bai2" />
+      <module name="java-k70" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baitap.bai2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaQueue" />
       <module name="java-k70" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedReaderFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BufferedReaderFile" />
+    <configuration name="JavaThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaThread" />
       <module name="java-k70" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrintWriteFile" />
-      <module name="java-k70" />
+    <configuration name="TCPEchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TCPEchoClient" />
+      <module name="lesson_12" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadWriteObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReadWriteObject" />
-      <module name="java-k70" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WriteAppenFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WriteAppenFile" />
-      <module name="java-k70" />
+    <configuration name="TCPEchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TCPEchoServer" />
+      <module name="lesson_12" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReadWriteObject" />
-        <item itemvalue="Application.WriteAppenFile" />
-        <item itemvalue="Application.PrintWriteFile" />
-        <item itemvalue="Application.BufferedReaderFile" />
-        <item itemvalue="Application.BufferInputStream" />
+        <item itemvalue="Application.TCPEchoServer" />
+        <item itemvalue="Application.TCPEchoClient" />
+        <item itemvalue="Application.Bai2" />
+        <item itemvalue="Application.JavaQueue" />
+        <item itemvalue="Application.JavaThread" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +165,14 @@
       <option name="presentableId" value="Default" />
       <updated>1681048270429</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lesson 10">
+      <created>1682181620286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682181620286</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,5 +186,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 10" />
   </component>
 </project>
