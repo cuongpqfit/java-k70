@@ -1,0 +1,69 @@
+===BÀI TẬP PUSH LÊN GITHUB
+
+Bài 1. Viết 1 chương trình  Java thực hiện công việc sau:
+Ghi dữ liệu xuống file ”number.txt” với:
+    - Dòng đầu tiên ghi 1 số ngẫu nhiên n (với 10 <= n <=100)
+    - Mỗi dòng tiếp theo ghi 1 số nguyên dương ngẫu nhiên từ 1 đến 500
+
+
+Bài 2. Viết chương trình Java khác để thực hiện công việc:
+Sử dụng 3 threads:
+    - Thread 1 sau mỗi giây sẽ đọc dữ liệu là một số trong file "number.txt" sau giá trị n đầu tiên
+        Nếu số đọc được là chẵn thì chuyển qua thread 2
+        Nếu số đọc được là lẻ thì chuyển qua thread 3
+    - Thread 2:
+        Ngay sau khi nhận được số vừa đọc từ thread 1 thì nó sẽ in ra file "output2.txt" tất cả các ước số của số này
+        Ví dụ:  Thread -2:  18 = 1, 2, 3, 6, 9, 18
+    - Thread 3:
+        Ngay sau khi nhận được số vừa đọc từ thread 1 thì nó sẽ in ra file "output3.txt" là bình phương của số đó
+        Ví dụ:  Thread -3:  9 = 91
+   
+
+Ví dụ:
+number.txt      output2.txt                     output3.txt                 
+2 3 4           Thread -2:  2 = 1, 2            Thread -3:  2 = 4           
+                Thread -2:  3 = 1, 3            Thread -3:  3 = 9           
+                Thread -2:  4 = 1, 2, 4         Thread -3:  4 = 16          
+                                                                            
+                                                                            
+
+===QUEUE
+Bài 3: Cho N xâu. Kiểm tra các xâu nó có phải là Palindrome hay không?
+Input: nhập từ file palindrome.inp
+    - Dòng 1 ghi số lượng xâu cần kiểm tra
+    - N Dòng tiếp theo mỗi dòng là 1 xâu ký tự
+Output: xuất ra file palindrome.out
+    - N dòng ghi kết quả 0 là không đối xứng 1 là đối xứng
+Ví dụ:
+palindrome.inp                  palindrome.out
+3                               0
+AABB                            1
+ABBA                            1
+ABCBA
+
+
+Bài 4: https://leetcode.com/problems/last-stone-weight/
+You are given an array of integers stones where stones[i] is the weight of the ith stone.
+
+We are playing a game with the stones. On each turn, we choose the heaviest two stones and smash them together. Suppose the heaviest 
+two stones have weights x and y with x <= y. The result of this smash is:
+
+If x == y, both stones are destroyed, and
+If x != y, the stone of weight x is destroyed, and the stone of weight y has new weight y - x.
+At the end of the game, there is at most one stone left.
+
+Return the weight of the last remaining stone. If there are no stones left, return 0.
+
+Example 1:
+
+Input: stones = [2,7,4,1,8,1]
+Output: 1
+Explanation: 
+We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,
+we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,
+we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
+we combine 1 and 1 to get 0 so the array converts to [1] then that's the value of the last stone.
+Example 2:
+
+Input: stones = [1]
+Output: 1
