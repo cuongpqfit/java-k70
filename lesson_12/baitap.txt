@@ -1,0 +1,5 @@
+===BÀI TẬP PUSH LÊN GITHUB
+
+Module 1: Ứng dụng boardcast
+- Tham khảo code trong ChatSocket viết ứng dụng BoardCast trong đó Client và Server kết nối Socket-TCP.
+- Khi 1 client gửi dữ liệu String lên server thì server sẽ gửi dữ liệu đó đến tất cả các client khác đang kết nối.
