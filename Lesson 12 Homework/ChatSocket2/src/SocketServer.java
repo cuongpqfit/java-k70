@@ -31,17 +31,24 @@ public class SocketServer {
     // Class ClientHandler thực hiện xử lý dữ liệu của một Socket Client
     private static class ClientHandler implements Runnable {
         private final Socket socket;
+        private String username ="";
         public ClientHandler(Socket socket) {
             this.socket = socket;
         }
         @Override
         public void run() {
+            //Bắt client nhập username đến khi nhập thành công
+            //Client nhập username lưu vào thuộc tính username của class ClientHandler
+
             try {
                 // Tạo luồng đọc dữ liệu từ Socket Client
                 BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 // Đọc và ghi dữ liệu liên tục
                 while(true) {
                     String receivedData = reader.readLine();
+
+                    //Nếu receivedData có bắt đầu = @[username] thì sẽ gửi msg đến client có username tương ứng
+
                     if (receivedData != null) {
                         System.out.println("Received from client " + socket + ": " + receivedData);
                         SendMessage(receivedData);
