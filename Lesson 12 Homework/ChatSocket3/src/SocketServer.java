@@ -106,7 +106,7 @@ public class SocketServer {
         public static void sendTo(String message, String username) {
             for (ClientHandler client : clients) {
                 if (client.getUsername().equals(username)) {
-                    client.sendMessage(message);
+                    client.sendPrivateMessage(message);
                     break;
                 }
             }
@@ -114,12 +114,15 @@ public class SocketServer {
         public static void broadcast(String message, ClientHandler sender) {
             for (ClientHandler client : clients) {
                 if (client != sender) {
-                    client.sendMessage(message);
+                    client.sendPublicMessage(message);
                 }
             }
         }
-        public void sendMessage(String message)  {
+        public void sendPrivateMessage(String message)  {
             writer.println("Message from client " + message);
+        }
+        public void sendPublicMessage(String message)  {
+            writer.println("Server sends messages to all clients--> " + message);
         }
         public String getUsername() {
             return username;
